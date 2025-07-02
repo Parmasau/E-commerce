@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				shop: {
+					primary: 'hsl(var(--shop-primary))',
+					'primary-light': 'hsl(var(--shop-primary-light))',
+					accent: 'hsl(var(--shop-accent))',
+					success: 'hsl(var(--shop-success))',
+					warning: 'hsl(var(--shop-warning))',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
