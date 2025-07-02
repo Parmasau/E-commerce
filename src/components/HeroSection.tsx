@@ -26,10 +26,24 @@ const HeroSection = () => {
             From electronics to home decor, find everything you need in one place.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="shop-accent" size="lg" className="font-semibold">
+            <Button 
+              variant="shop-accent" 
+              size="lg" 
+              className="font-semibold" 
+              onClick={() => {
+                document.querySelector('[data-section="products"]')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Shop Now
             </Button>
-            <Button variant="shop-outline" size="lg" className="font-semibold border-white text-white hover:bg-white hover:text-gray-900">
+            <Button 
+              variant="shop-outline" 
+              size="lg" 
+              className="font-semibold border-white text-white hover:bg-white hover:text-gray-900"
+              onClick={() => {
+                document.querySelector('[data-section="products"]')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Explore Collection
             </Button>
           </div>

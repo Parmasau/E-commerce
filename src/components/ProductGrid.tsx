@@ -90,7 +90,7 @@ const ProductGrid = () => {
   ];
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-16 bg-background" data-section="products">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -111,7 +111,12 @@ const ProductGrid = () => {
 
         {/* Load More Button */}
         <div className="text-center mt-12">
-          <button className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-shop-primary to-shop-primary-light text-white font-semibold rounded-lg hover:shadow-[var(--shadow-button)] hover:scale-105 transition-all duration-300">
+          <button 
+            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-shop-primary to-shop-primary-light text-white font-semibold rounded-lg hover:shadow-[var(--shadow-button)] hover:scale-105 transition-all duration-300"
+            onClick={() => {
+              alert('Loading more products...');
+            }}
+          >
             View All Products
           </button>
         </div>

@@ -71,7 +71,13 @@ const ProductCard = ({
         <div className={`absolute bottom-3 left-3 right-3 transition-all duration-300 ${
           isHovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
-          <Button variant="shop" className="w-full">
+          <Button 
+            variant="shop" 
+            className="w-full"
+            onClick={() => {
+              alert(`Added "${name}" to cart!`);
+            }}
+          >
             <ShoppingCart className="h-4 w-4 mr-2" />
             Add to Cart
           </Button>
